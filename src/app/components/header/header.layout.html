@@ -1,0 +1,37 @@
+<div class="header-layout row">
+    <div class="header-left col-4 col-md-4 col-lg-2 col-xl-2">
+        <div class="logo"><a href="/"><img src="assets/images/logo.png" alt="Logo"/></a></div>
+        <div class="name-shop"><a href="/">{{ nameShop }}</a></div>
+    </div>
+    <div class="header-center col-4 col-md-4 col-lg-4 col-xl-4">
+        <div class="search">
+            <button class="search-icon" id="btn-search" >
+                <i class="bi bi-search"></i> 
+            </button>
+            <input type="text" name="kw" autocomplete="off" placeholder="Tìm sản phẩm" [(ngModel)]="searchQuery" value="searchQuery"/>
+            <button class="clear-icon" (click)="clearSearch()" >
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+    </div>
+    <div class="header-right col-6 col-md-4 col-lg-6 col-xl-6">
+        <ul class="user-actions">
+            <!-- <li class="menu-item"> -->
+                <!-- <div class="notification">
+                    <button class="notification-icon">
+                        <span class="bell-icon">🔔</span>
+                        <span class="badge">5</span> 
+                    </button>
+                    <ul class="notification-list">
+                        <li>Bạn có thông báo mới!</li>
+                        <li>Bài viết của bạn đã được phê duyệt.</li>
+                        <li>Hôm nay là sinh nhật của Duy.</li>
+                        <li>Bạn có 3 tin nhắn chưa đọc.</li>
+                        <li>Xem thêm...</li>
+                    </ul>
+                </div> -->
+            <!-- </li> -->
+            <!-- <li class="menu-item"><a href="#">Cart</a></li> -->
+        </ul> 
+    </div>
+</div>

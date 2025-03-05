@@ -1,0 +1,134 @@
+:host {
+    height: 100%;
+    width: 100%;
+}
+
+.login-component{
+    background-image: url('/assets/images/background-login.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.wrapper{
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(15px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 27%;
+}
+.title{
+    color: white;
+    font-size: 2rem;
+}
+.form{
+    padding: 1rem;
+    width: 100%;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input div input{
+    border-radius: 0.2rem;
+    border: none;
+    padding: 0.3rem;
+    width: 100%;
+    border: 0.5px solid #ffffff;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+
+.input div input::placeholder {
+    color: rgba(255, 255, 255, 0.8); /* Chỉnh màu chữ placeholder */
+}
+
+.remember-me{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.forgot-password a, .no-account a{
+    outline: none;
+}
+.more{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    color: white;
+    font-size: 13px;
+}
+
+.forgot-password a{
+    color: white;
+    text-decoration: none;
+}
+
+.forgot-password a:hover{
+    text-decoration: underline;
+}
+
+.btn-login{
+    display: flex; 
+    justify-content: center;
+}
+
+.btn-login input{
+    padding: 0.4rem;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.no-account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 13px;
+    color: white;
+    gap: 0.2rem;
+}
+.no-account a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.no-account a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 450px){
+    .wrapper{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 850px){
+    .wrapper{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 850px){
+    .wrapper{
+        min-width: 320px;
+    }
+}
+
